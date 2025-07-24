@@ -21,21 +21,26 @@ I have completed problem sets and projects in C and Python, covering topics such
 - **Readability** – Calculates grade level of a text.
 - **Caesar** – Implements Caesar cipher encryption.
 - **Substitution** – Substitution cipher with key.
+- **Scrabble** – Calculates word scores like the game Scrabble by assigning points to letters.
 
 ### Week 3 – Algorithms
 - **Plurality** – Voting program using arrays.
 - **Tideman** – Ranked choice voting using sorting & graph logic.
+- **Runoff** – Simulates a runoff election with vote redistribution logic.
+- **Sort (answers.txt)** – Theoretical answers explaining sorting algorithms like Bubble Sort, Selection Sort, and Insertion Sort.
 
 ### Week 4 – Memory
-- **Filter** – Applies image filters (grayscale, sepia, blur, edges).
+- **Filter (less)** – Applies image filters (grayscale, sepia, blur, edges) using loop and pixel manipulation.
+- **Filter (more)** – Adds blur and edge detection to images using algorithms like box blur and Sobel filter.
 - **Recover** – Recovers deleted JPEGs from a forensic image.
+- **Volume** – Modifies the volume of an audio file by scaling sample amplitudes.
 
 ### Week 5 – Data Structures
-- **Speller** – Dictionary spell-checker using hash tables.
+- **Inheritance** – Simulates genetic inheritance of blood types using recursion and dynamic memory in C.
 
 ---
 ### 🚧 More coming soon...
-Stay tuned! I’ll be updating this repository with the remaining CS50x projects including web development, Python, Flask, and my final project (a surprise!).
+Stay tuned! I’ll be updating this repository with the remaining CS50x projects including web development, Python, Flask, and my final project (*a surprise!!*).
 
 
 ## 🌐 About Me
