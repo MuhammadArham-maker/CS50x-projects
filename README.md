@@ -8,6 +8,9 @@ I have completed problem sets and projects in C and Python, covering topics such
 
 ## ✅ Completed Projects
 
+### Week 0 – Scratch
+- **[My Scratch Project]((https://scratch.mit.edu/projects/1201280373/))** – A fun visual program made with MIT Scratch. A "MONSTER SHOOTING GAME".
+
 ### Week 1 – C
 - **Hello** – Simple "Hello, world" program.
 - **Mario (less/more)** – Prints pyramid patterns using loops.
