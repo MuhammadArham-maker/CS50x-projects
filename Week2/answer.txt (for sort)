@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: There is a significant time difference between the reversed (worst case) and sorted (best case) inputs. This behavior is characteristic of Bubble Sort, especially when optimized to stop early if no swaps are made.
+
+sort2 uses: Merge Sort
+
+How do you know?:The time taken is consistent across all input types—random, reversed, and sorted. Merge Sort has a Running time of (n log n) in all cases, making it both efficient and stable.
+
+sort3 uses: Selection Sort
+
+How do you know?: The time taken is approximately the same for all input types, with little to no variation between reversed and sorted inputs. This matches Selection Sort, which always performs (n²) comparisons regardless of input order.
