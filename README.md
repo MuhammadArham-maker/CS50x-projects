@@ -37,6 +37,9 @@ I have completed problem sets and projects in C and Python, covering topics such
 
 ### Week 5 – Data Structures
 - **Inheritance** – Simulates genetic inheritance of blood types using recursion and dynamic memory in C.
+- **Speller** – A spell checker using a hash table to find misspelled words from a dictionary.  
+  Implemented `dictionary.c` and `dictionary.h` for loading, checking, and unloading words efficiently.
+
 
 ---
 ### 🚧 More coming soon...
