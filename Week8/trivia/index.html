@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const buttons = document.querySelectorAll(".options button");
+
+                buttons.forEach(button=>{
+
+                    button.addEventListener("click", function() {
+
+                        // Reset all the buttons color
+                        buttons.forEach(btn=> btn.style.backgroundColor ="");
+
+                        // Check if correct option is clicked
+                        if (button.dataset.correct === "true") {
+                            document.querySelector("#feedback").innerHTML = "Correct!";
+                            button.style.backgroundColor = "green";
+                        }
+                        else {
+                            document.querySelector("#feedback").innerHTML = "Incorrect";
+                            button.style.backgroundColor = "red";
+                        }
+                    });
+                });
+
+                // Free Response
+                document.querySelector("#check").addEventListener("click", function() {
+
+                    let input = document.querySelector("#answer").value.trim().toLowerCase();
+
+                    if (input == "tiger") {
+                        document.querySelector("#feedback2").innerHTML = "Correct!";
+                        document.querySelector("#answer").style.backgroundColor = "green";
+                    }
+                    else {
+                        document.querySelector("#feedback2").innerHTML = "Incorrect";
+                        document.querySelector("#answer").style.backgroundColor = "red";
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who is the best football player in the world? </h3>
+                <div class="options">
+                    <button data-correct="false">Messi</button>
+                    <button data-correct="false">Ronaldo</button>
+                    <button data-correct="false">Neymar</button>
+                    <button data-correct="true">Arham</button>
+                </div>
+                <p id="feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the national animal of India?</h3>
+                <input type="text" id="answer">
+                <button id="check">Check Answer</button>
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>
