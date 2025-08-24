@@ -1,0 +1,20 @@
+If songs.db contains the top 100 songs of one listener from 2018, I would have characterize their audio aura by:
+-> Weighting the songs based on playcount (favorite ones get high weightage).
+-> How recently played (recent ones gets high weightage).
+-> Grouping the songs with similar audio features (energy, tempo, valence).
+-> Taking the median value within each group (to get the most common favorite type of songs without letting the extremes affect as in average).
+-> Selecting the songs from the most dominant group to form the listener aura.
+
+While this method is better then a simple average, but not the best because:
+-> It ignores the context of listening and timing that when certain types of songs are played(like in gyms, while driving, studying).
+-> If the listener is trying a new song then just this one random song will affect the aura.
+-> Large difference in (features of) songs will cause grouping (them on same features) give poor results.
+-> It doesn't preview lyrics (a slow sad song and slow happy song is not differentiated which is again important).
+-> There is no seasonal or timely patterns recognization, what if the users mood changes by time then the recently ones get more weightage.
+
+Better ways of calculating the aura would be:
+-> to give different importance to each songs according to the context of listening like (in gym, while driving, studying).
+-> Ignore random just one or two songs from the list.
+-> First grouping the songs according to genres then according to features this would get list of songs which we will be then easy to further group.
+-> There should be Lyrics sentiment analysis which will get the sense of lyrics.
+-> Patterns recognization to recognize regular and popular listening patterns like according to season and time.
