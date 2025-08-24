@@ -40,6 +40,24 @@ I have completed problem sets and projects in C and Python, covering topics such
 - **Speller** – A spell checker using a hash table to find misspelled words from a dictionary.  
   Implemented `dictionary.c` and `dictionary.h` for loading, checking, and unloading words efficiently.
 
+### Week 6 - Python
+- **Hello** - Basic Python program to print "hello, world!".
+- **Mario (Less)** - Prints a left-aligned pyramid using loops.
+- **Mario (More)** - Prints a right-aligned pyramid with two sides.
+- **Cash** - Implements a greedy algorithm to calculate the minimum number of coins for change.
+- **Credit** - Uses Luhn’s Algorithm to validate credit card numbers.
+- **Readability** - Calculates the grade level of a text using the Coleman-Liau index.
+- **DNA** - Identifies a person based on their DNA sequence by matching Short Tandem Repeats (STRs) in a database.
+
+### Week 7 - SQL
+- **Songs** - Query a music database to extract information about artists, songs, and genres.
+- **Movies** - Query a database of movies to answer questions about actors, ratings, and relationships.
+- **Fiftyville** - Solve a mystery by writing SQL queries to search through tables of people, flights, phone calls, and more.
+
+### Week 8 - HTML, CSS, JavaScript
+- **Trivia** - A web-based trivia game built with HTML, CSS, and JavaScript.
+             - Features multiple-choice and free-response questions with interactive feedback.
+
 
 ---
 ### 🚧 More coming soon...
