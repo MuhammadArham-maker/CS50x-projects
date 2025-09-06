@@ -1,0 +1,30 @@
+-> 10 HTML Tags
+
+1. <meta> – Used to define metadata and ensure proper rendering on different devices.
+2. <img> – Inserted images for decoration and identity.
+3. <footer> – Added a footer section at the bottom of the webpage.
+4. <section> – Organized content into logical sections for clarity.
+5. <textarea> – Provided a larger input field for users to type messages in the contact form.
+6. <form> – Created a form for collecting user input on the contact page.
+7. <span> – Used for styling inline text elements without breaking layout.
+8. <label> – Associated text labels with form input fields.
+9. <input> – Collected user data like name and email in the form.
+10. <nav> – Defined the navigation bar containing links to other pages.
+
+-> 5 CSS Properties
+
+1. font-family – Applied custom fonts for consistent and attractive text styling.
+2. background-color – Set background colors for header, footer, and body.
+3. padding – Added spacing inside containers and elements for readability.
+4. text-align – Centered and aligned content for a cleaner layout.
+5. text-decoration – Styled links, including underline effects on hover.
+
+-> JavaScript Usage
+
+Added JavaScript in contact.html to display an alert message ("Message Sent!") when the form submit button is clicked.
+This makes webpage interactive even without a backend.
+
+-> Bootstrap Usage
+
+Used Bootstrap classes in all HTML files to create responsive design, align navigation links,
+place content inside containers, and improve overall appearance with minimal code, making it look "WOW".
