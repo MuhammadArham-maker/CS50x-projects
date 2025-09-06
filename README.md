@@ -57,6 +57,7 @@ I have completed problem sets and projects in C and Python, covering topics such
 ### Week 8 - HTML, CSS, JavaScript
 - **Trivia** - A web-based trivia game built with HTML, CSS, and JavaScript.
              - Features multiple-choice and free-response questions with interactive feedback.
+- **Homepage**- A simple personal website built using HTML and CSS, with multiple pages (about, achievements, contact, logo).
 
 
 ---
