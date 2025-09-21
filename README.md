@@ -59,6 +59,10 @@ I have completed problem sets and projects in C and Python, covering topics such
              - Features multiple-choice and free-response questions with interactive feedback.
 - **Homepage**- A simple personal website built using HTML and CSS, with multiple pages (about, achievements, contact, logo).
 
+### Week 9 – Flask / Web Programming
+- **Birthday** – A web app to manage and track birthdays. Built with Flask, Python, and SQL.
+- **Finance** – A stock trading web app where users can register, log in, buy/sell stocks, and view their portfolio. Built with Flask, SQL, and APIs.
+
 
 ---
 ### 🚧 More coming soon...
