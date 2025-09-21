@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post" onsubmit="return ValidatePassword()">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="confirmation" placeholder="Confirm Password" type="password" required>
+            <small id="error-msg" style="color:red;"></small>
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+
+    <script>
+        function ValidatePassword() {
+            const pwd = document.querySelector('[name="password"]').value;
+            const conf = document.querySelector('[name="confirmation"]').value;
+            const errorMsg = document.getElementById("error-msg");
+
+            if (pwd !== conf) {
+                errorMsg.textContent = "Password do not match!";
+                return false;
+            }
+            errorMsg.textContent = "";
+            return true;
+        }
+    </script>
+{% endblock %}

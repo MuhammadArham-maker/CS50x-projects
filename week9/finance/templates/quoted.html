@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<div class="card shadow-lg border-0 rounded-3 text-center mx-auto" style="max-width: 400px;">
+    <div class="card-body">
+        <h4 class="card-title mb-3">{{ stock["name"] }}</h4>
+        <h6 class="text-muted">({{ stock["symbol"] }})</h6>
+        <hr>
+        <p class="card-text fs-5">
+            Current Price: <strong class="text-success">{{ stock["price"] | usd }}</strong>
+        </p>
+        <a href="/quote" class="btn btn-primary btn-sm mt-3">Check Another Quote</a>
+    </div>
+</div>
+
+{% endblock %}

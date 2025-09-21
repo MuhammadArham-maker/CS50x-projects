@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Sell Stocks</h1>
+
+<form action="/sell" method="post">
+    <!--Dropdown for owed stocks-->
+    <div class="mb-3">
+        {% if stocks %}
+            <select name="symbol" class="form-control" required>
+                <option disabled selected value="">Select a Stock</option>
+                {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}">{{ stock.symbol }}</option>
+                {% endfor %}
+            </select>
+        {% else %}
+            <p>You don't own any stocks to sell.</p>
+        {% endif %}
+    </div>
+
+    <!-- Number of shares-->
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Number of shares to sell" type="number" min="1" required>
+    </div>
+
+    <button class="btn btn-danger" type="submit">Sell</button>
+</form>
+{% endblock %}

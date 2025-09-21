@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="container py-5">
+        <h2 class="mb-4">Portfolio</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="text-start">Symbol</th>
+                    <th class="text-end">Shares</th>
+                    <th class="text-end">Price</th>
+                    <th class="text-end">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for holding in holdings %}
+                    <tr>
+                        <td class="text-start">{{ holding.symbol }}</td>
+                        <td class="text-end">{{ holding.shares }}</td>
+                        <td class="text-end">{{ holding.price | usd }}</td>
+                        <td class="text-end">{{ holding.total | usd }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-end fw-bold">Cash</td>
+                    <td class="text-end">{{ current_cash | usd }}</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-end fw-bold">GRAND TOTAL</td>
+                    <td class="text-end fw-bold">{{ grandtotal | usd }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+{% endblock %}
